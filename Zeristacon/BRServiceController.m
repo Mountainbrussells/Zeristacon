@@ -82,7 +82,7 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         Event *mocEvent = [Event insertInManagedObjectContext:self.writeMOC];
                         mocEvent.name = [event objectForKey:@"name"];
                         NSDateFormatter* dateFormatter = [[NSDateFormatter alloc]init];
-                        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZ"];
+                        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
                         NSString* startDateString = [event objectForKey:@"start"];
                         NSDate* startDate = [dateFormatter dateFromString:startDateString];
                         mocEvent.startTime = startDate;
@@ -92,7 +92,9 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         NSDictionary *location = [event objectForKey:@"location"];
                         
                         if (location == NULL) {
-                            mocEvent.location = [location objectForKey:@"name"];
+                            mocEvent.location = @"Location TBD";
+                        } else {
+//                            mocEvent.location = [location objectForKey:@"name"];
                         }
                         mocEvent.uid = [event objectForKey:@"id"];
                         

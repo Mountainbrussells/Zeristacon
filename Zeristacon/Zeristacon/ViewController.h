@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BRPersistenceController.h"
+#import "BRServiceController.h"
 
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) BRPersistenceController *perstistenceController;
+@property (strong, nonatomic) BRServiceController *serviceController;
 
 @end
 

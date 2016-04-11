@@ -29,7 +29,12 @@
     self.coreDataController = [[BRCoreDataController alloc] initWithPersistenceController:self.persistenceController];
     self.serviceController = [[BRServiceController alloc] initWithPersistenceController:self.persistenceController];
     
-    [self.serviceController updateEventsWithCompletion:nil];
+    
+    
+    UINavigationController *navVC = (UINavigationController *)self.window.rootViewController;
+    ViewController *viewController = [navVC.viewControllers objectAtIndex:0];
+    viewController.perstistenceController = self.persistenceController;
+    viewController.serviceController = self.serviceController;
     
     
     return YES;
