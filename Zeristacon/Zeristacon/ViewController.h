@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BRPersistenceController.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) BRPersistenceController *perstistenceController;
 
 @end
 
