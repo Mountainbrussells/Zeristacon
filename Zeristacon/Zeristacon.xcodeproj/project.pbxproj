@@ -18,6 +18,8 @@
 		C916683F1CBBF06800F9AF86 /* ZeristaconUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C916683E1CBBF06800F9AF86 /* ZeristaconUITests.m */; };
 		C916684E1CBBF19E00F9AF86 /* BREventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */; };
 		C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668521CBBF60700F9AF86 /* BRPersistenceController.m */; };
+		C916685E1CBBFD4200F9AF86 /* Event+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */; };
+		C916685F1CBBFD4200F9AF86 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = C916685D1CBBFD4200F9AF86 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREventTableViewCell.m; sourceTree = "<group>"; };
 		C91668511CBBF5FE00F9AF86 /* BRPersistenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPersistenceController.h; sourceTree = "<group>"; };
 		C91668521CBBF60700F9AF86 /* BRPersistenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPersistenceController.m; sourceTree = "<group>"; };
+		C916685A1CBBFD4200F9AF86 /* Event+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Event+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C916685C1CBBFD4200F9AF86 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		C916685D1CBBFD4200F9AF86 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,10 @@
 			children = (
 				C91668511CBBF5FE00F9AF86 /* BRPersistenceController.h */,
 				C91668521CBBF60700F9AF86 /* BRPersistenceController.m */,
+				C916685A1CBBFD4200F9AF86 /* Event+CoreDataProperties.h */,
+				C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */,
+				C916685C1CBBFD4200F9AF86 /* Event.h */,
+				C916685D1CBBFD4200F9AF86 /* Event.m */,
 			);
 			name = CoreDataSetup;
 			sourceTree = "<group>";
@@ -294,6 +304,8 @@
 				C916684E1CBBF19E00F9AF86 /* BREventTableViewCell.m in Sources */,
 				C916681E1CBBF06800F9AF86 /* ViewController.m in Sources */,
 				C91668241CBBF06800F9AF86 /* Zeristacon.xcdatamodeld in Sources */,
+				C916685E1CBBFD4200F9AF86 /* Event+CoreDataProperties.m in Sources */,
+				C916685F1CBBFD4200F9AF86 /* Event.m in Sources */,
 				C916681B1CBBF06800F9AF86 /* AppDelegate.m in Sources */,
 				C91668181CBBF06800F9AF86 /* main.m in Sources */,
 				C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */,
