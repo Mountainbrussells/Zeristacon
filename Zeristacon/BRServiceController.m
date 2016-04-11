@@ -69,7 +69,7 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         NSDate* finishDate = [dateFormatter dateFromString:finishDateString];
                         existingEvent.finishTime = finishDate;
                         NSDictionary *location = [event objectForKey:@"location"];
-                        //existingEvent.location = [location objectForKey:@"name"];
+  //                      existingEvent.location = location[@"name"];
                         existingEvent.uid = [event objectForKey:@"id"];
                         
                     
@@ -94,7 +94,7 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         if (location == NULL) {
                             mocEvent.location = @"Location TBD";
                         } else {
-//                            mocEvent.location = [location objectForKey:@"name"];
+    //                       mocEvent.location = location[@"name"];
                         }
                         mocEvent.uid = [event objectForKey:@"id"];
                         
