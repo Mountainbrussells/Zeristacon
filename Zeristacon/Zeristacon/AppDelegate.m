@@ -8,11 +8,15 @@
 
 #import "AppDelegate.h"
 #import "BRPersistenceController.h"
+#import "BRCoreDataController.h"
+#import "BRServiceController.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()
 
 @property (strong, readwrite) BRPersistenceController *persistenceController;
+@property (strong, nonatomic) BRCoreDataController *coreDataController;
+@property (strong, nonatomic) BRServiceController *serviceController;
 
 @end
 
@@ -22,6 +26,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setPersistenceController:[[BRPersistenceController alloc] initWithCallBack:nil]];
+    self.coreDataController = [[BRCoreDataController alloc] initWithPersistenceController:self.persistenceController];
+    self.serviceController = [[BRServiceController alloc] initWithPersistenceController:self.persistenceController];
+    
+    [self.serviceController updateEventsWithCompletion:nil];
+    
+    
     return YES;
 }
 

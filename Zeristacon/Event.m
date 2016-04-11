@@ -10,6 +10,14 @@
 
 @implementation Event
 
++ (id)insertInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
+{
+    NSParameterAssert(managedObjectContext);
+    Event *event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:managedObjectContext];
+    
+    return event;
+}
+
 - (void)willSave
 {
     [super willSave];
