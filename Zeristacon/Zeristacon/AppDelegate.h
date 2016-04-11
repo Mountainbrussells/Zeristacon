@@ -9,16 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+@class BRPersistenceController;
+
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, readonly) BRPersistenceController *persistenceController;
 
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
+
 
 
 @end

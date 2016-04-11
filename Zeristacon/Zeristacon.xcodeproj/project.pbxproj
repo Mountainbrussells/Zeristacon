@@ -17,6 +17,7 @@
 		C91668341CBBF06800F9AF86 /* ZeristaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668331CBBF06800F9AF86 /* ZeristaconTests.m */; };
 		C916683F1CBBF06800F9AF86 /* ZeristaconUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C916683E1CBBF06800F9AF86 /* ZeristaconUITests.m */; };
 		C916684E1CBBF19E00F9AF86 /* BREventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */; };
+		C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668521CBBF60700F9AF86 /* BRPersistenceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		C91668401CBBF06800F9AF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C916684C1CBBF19D00F9AF86 /* BREventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREventTableViewCell.h; sourceTree = "<group>"; };
 		C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREventTableViewCell.m; sourceTree = "<group>"; };
+		C91668511CBBF5FE00F9AF86 /* BRPersistenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPersistenceController.h; sourceTree = "<group>"; };
+		C91668521CBBF60700F9AF86 /* BRPersistenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPersistenceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		C916680A1CBBF06700F9AF86 = {
 			isa = PBXGroup;
 			children = (
+				C91668501CBBF5E600F9AF86 /* CoreDataSetup */,
 				C91668151CBBF06800F9AF86 /* Zeristacon */,
 				C91668321CBBF06800F9AF86 /* ZeristaconTests */,
 				C916683D1CBBF06800F9AF86 /* ZeristaconUITests */,
@@ -146,6 +150,15 @@
 				C91668401CBBF06800F9AF86 /* Info.plist */,
 			);
 			path = ZeristaconUITests;
+			sourceTree = "<group>";
+		};
+		C91668501CBBF5E600F9AF86 /* CoreDataSetup */ = {
+			isa = PBXGroup;
+			children = (
+				C91668511CBBF5FE00F9AF86 /* BRPersistenceController.h */,
+				C91668521CBBF60700F9AF86 /* BRPersistenceController.m */,
+			);
+			name = CoreDataSetup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +296,7 @@
 				C91668241CBBF06800F9AF86 /* Zeristacon.xcdatamodeld in Sources */,
 				C916681B1CBBF06800F9AF86 /* AppDelegate.m in Sources */,
 				C91668181CBBF06800F9AF86 /* main.m in Sources */,
+				C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +522,7 @@
 				C91668451CBBF06800F9AF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C91668461CBBF06800F9AF86 /* Build configuration list for PBXNativeTarget "ZeristaconTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +531,7 @@
 				C91668481CBBF06800F9AF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C91668491CBBF06800F9AF86 /* Build configuration list for PBXNativeTarget "ZeristaconUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +540,7 @@
 				C916684B1CBBF06800F9AF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
