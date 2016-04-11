@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91668181CBBF06800F9AF86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668171CBBF06800F9AF86 /* main.m */; };
+		C916681B1CBBF06800F9AF86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C916681A1CBBF06800F9AF86 /* AppDelegate.m */; };
+		C916681E1CBBF06800F9AF86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C916681D1CBBF06800F9AF86 /* ViewController.m */; };
+		C91668211CBBF06800F9AF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C916681F1CBBF06800F9AF86 /* Main.storyboard */; };
+		C91668241CBBF06800F9AF86 /* Zeristacon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C91668221CBBF06800F9AF86 /* Zeristacon.xcdatamodeld */; };
+		C91668261CBBF06800F9AF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91668251CBBF06800F9AF86 /* Assets.xcassets */; };
+		C91668291CBBF06800F9AF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91668271CBBF06800F9AF86 /* LaunchScreen.storyboard */; };
+		C91668341CBBF06800F9AF86 /* ZeristaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668331CBBF06800F9AF86 /* ZeristaconTests.m */; };
+		C916683F1CBBF06800F9AF86 /* ZeristaconUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C916683E1CBBF06800F9AF86 /* ZeristaconUITests.m */; };
+		C916684E1CBBF19E00F9AF86 /* BREventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */; };
+		C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668521CBBF60700F9AF86 /* BRPersistenceController.m */; };
+		C916685E1CBBFD4200F9AF86 /* Event+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */; };
+		C916685F1CBBFD4200F9AF86 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = C916685D1CBBFD4200F9AF86 /* Event.m */; };
+		C91668621CBBFF2500F9AF86 /* BRCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */; };
+		C91668661CBC030300F9AF86 /* BRServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668651CBC030300F9AF86 /* BRServiceController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C91668301CBBF06800F9AF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C916680B1CBBF06700F9AF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C91668121CBBF06800F9AF86;
+			remoteInfo = Zeristacon;
+		};
+		C916683B1CBBF06800F9AF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C916680B1CBBF06700F9AF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C91668121CBBF06800F9AF86;
+			remoteInfo = Zeristacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C91668131CBBF06800F9AF86 /* Zeristacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zeristacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91668171CBBF06800F9AF86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C91668191CBBF06800F9AF86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C916681A1CBBF06800F9AF86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C916681C1CBBF06800F9AF86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C916681D1CBBF06800F9AF86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C91668201CBBF06800F9AF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C91668231CBBF06800F9AF86 /* Zeristacon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zeristacon.xcdatamodel; sourceTree = "<group>"; };
+		C91668251CBBF06800F9AF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C91668281CBBF06800F9AF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C916682A1CBBF06800F9AF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C916682F1CBBF06800F9AF86 /* ZeristaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeristaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91668331CBBF06800F9AF86 /* ZeristaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeristaconTests.m; sourceTree = "<group>"; };
+		C91668351CBBF06800F9AF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C916683A1CBBF06800F9AF86 /* ZeristaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeristaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C916683E1CBBF06800F9AF86 /* ZeristaconUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeristaconUITests.m; sourceTree = "<group>"; };
+		C91668401CBBF06800F9AF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C916684C1CBBF19D00F9AF86 /* BREventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREventTableViewCell.h; sourceTree = "<group>"; };
+		C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREventTableViewCell.m; sourceTree = "<group>"; };
+		C91668511CBBF5FE00F9AF86 /* BRPersistenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPersistenceController.h; sourceTree = "<group>"; };
+		C91668521CBBF60700F9AF86 /* BRPersistenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPersistenceController.m; sourceTree = "<group>"; };
+		C916685A1CBBFD4200F9AF86 /* Event+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Event+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C916685C1CBBFD4200F9AF86 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		C916685D1CBBFD4200F9AF86 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		C91668601CBBFF1F00F9AF86 /* BRCoreDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRCoreDataController.h; sourceTree = "<group>"; };
+		C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCoreDataController.m; sourceTree = "<group>"; };
+		C91668641CBC030300F9AF86 /* BRServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRServiceController.h; sourceTree = "<group>"; };
+		C91668651CBC030300F9AF86 /* BRServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRServiceController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C91668101CBBF06800F9AF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C916682C1CBBF06800F9AF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91668371CBBF06800F9AF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C916680A1CBBF06700F9AF86 = {
+			isa = PBXGroup;
+			children = (
+				C91668631CBC02BB00F9AF86 /* RESTControl */,
+				C91668501CBBF5E600F9AF86 /* CoreDataSetup */,
+				C91668151CBBF06800F9AF86 /* Zeristacon */,
+				C91668321CBBF06800F9AF86 /* ZeristaconTests */,
+				C916683D1CBBF06800F9AF86 /* ZeristaconUITests */,
+				C91668141CBBF06800F9AF86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C91668141CBBF06800F9AF86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C91668131CBBF06800F9AF86 /* Zeristacon.app */,
+				C916682F1CBBF06800F9AF86 /* ZeristaconTests.xctest */,
+				C916683A1CBBF06800F9AF86 /* ZeristaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C91668151CBBF06800F9AF86 /* Zeristacon */ = {
+			isa = PBXGroup;
+			children = (
+				C91668191CBBF06800F9AF86 /* AppDelegate.h */,
+				C916681A1CBBF06800F9AF86 /* AppDelegate.m */,
+				C916681C1CBBF06800F9AF86 /* ViewController.h */,
+				C916681D1CBBF06800F9AF86 /* ViewController.m */,
+				C916684C1CBBF19D00F9AF86 /* BREventTableViewCell.h */,
+				C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */,
+				C916681F1CBBF06800F9AF86 /* Main.storyboard */,
+				C91668251CBBF06800F9AF86 /* Assets.xcassets */,
+				C91668271CBBF06800F9AF86 /* LaunchScreen.storyboard */,
+				C916682A1CBBF06800F9AF86 /* Info.plist */,
+				C91668221CBBF06800F9AF86 /* Zeristacon.xcdatamodeld */,
+				C91668161CBBF06800F9AF86 /* Supporting Files */,
+			);
+			path = Zeristacon;
+			sourceTree = "<group>";
+		};
+		C91668161CBBF06800F9AF86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C91668171CBBF06800F9AF86 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C91668321CBBF06800F9AF86 /* ZeristaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				C91668331CBBF06800F9AF86 /* ZeristaconTests.m */,
+				C91668351CBBF06800F9AF86 /* Info.plist */,
+			);
+			path = ZeristaconTests;
+			sourceTree = "<group>";
+		};
+		C916683D1CBBF06800F9AF86 /* ZeristaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C916683E1CBBF06800F9AF86 /* ZeristaconUITests.m */,
+				C91668401CBBF06800F9AF86 /* Info.plist */,
+			);
+			path = ZeristaconUITests;
+			sourceTree = "<group>";
+		};
+		C91668501CBBF5E600F9AF86 /* CoreDataSetup */ = {
+			isa = PBXGroup;
+			children = (
+				C91668511CBBF5FE00F9AF86 /* BRPersistenceController.h */,
+				C91668521CBBF60700F9AF86 /* BRPersistenceController.m */,
+				C916685A1CBBFD4200F9AF86 /* Event+CoreDataProperties.h */,
+				C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */,
+				C916685C1CBBFD4200F9AF86 /* Event.h */,
+				C916685D1CBBFD4200F9AF86 /* Event.m */,
+				C91668601CBBFF1F00F9AF86 /* BRCoreDataController.h */,
+				C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */,
+			);
+			name = CoreDataSetup;
+			sourceTree = "<group>";
+		};
+		C91668631CBC02BB00F9AF86 /* RESTControl */ = {
+			isa = PBXGroup;
+			children = (
+				C91668641CBC030300F9AF86 /* BRServiceController.h */,
+				C91668651CBC030300F9AF86 /* BRServiceController.m */,
+			);
+			name = RESTControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C91668121CBBF06800F9AF86 /* Zeristacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91668431CBBF06800F9AF86 /* Build configuration list for PBXNativeTarget "Zeristacon" */;
+			buildPhases = (
+				C916680F1CBBF06800F9AF86 /* Sources */,
+				C91668101CBBF06800F9AF86 /* Frameworks */,
+				C91668111CBBF06800F9AF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zeristacon;
+			productName = Zeristacon;
+			productReference = C91668131CBBF06800F9AF86 /* Zeristacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C916682E1CBBF06800F9AF86 /* ZeristaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91668461CBBF06800F9AF86 /* Build configuration list for PBXNativeTarget "ZeristaconTests" */;
+			buildPhases = (
+				C916682B1CBBF06800F9AF86 /* Sources */,
+				C916682C1CBBF06800F9AF86 /* Frameworks */,
+				C916682D1CBBF06800F9AF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C91668311CBBF06800F9AF86 /* PBXTargetDependency */,
+			);
+			name = ZeristaconTests;
+			productName = ZeristaconTests;
+			productReference = C916682F1CBBF06800F9AF86 /* ZeristaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C91668391CBBF06800F9AF86 /* ZeristaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91668491CBBF06800F9AF86 /* Build configuration list for PBXNativeTarget "ZeristaconUITests" */;
+			buildPhases = (
+				C91668361CBBF06800F9AF86 /* Sources */,
+				C91668371CBBF06800F9AF86 /* Frameworks */,
+				C91668381CBBF06800F9AF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C916683C1CBBF06800F9AF86 /* PBXTargetDependency */,
+			);
+			name = ZeristaconUITests;
+			productName = ZeristaconUITests;
+			productReference = C916683A1CBBF06800F9AF86 /* ZeristaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C916680B1CBBF06700F9AF86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ben Russell";
+				TargetAttributes = {
+					C91668121CBBF06800F9AF86 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C916682E1CBBF06800F9AF86 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C91668121CBBF06800F9AF86;
+					};
+					C91668391CBBF06800F9AF86 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C91668121CBBF06800F9AF86;
+					};
+				};
+			};
+			buildConfigurationList = C916680E1CBBF06700F9AF86 /* Build configuration list for PBXProject "Zeristacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C916680A1CBBF06700F9AF86;
+			productRefGroup = C91668141CBBF06800F9AF86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C91668121CBBF06800F9AF86 /* Zeristacon */,
+				C916682E1CBBF06800F9AF86 /* ZeristaconTests */,
+				C91668391CBBF06800F9AF86 /* ZeristaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C91668111CBBF06800F9AF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91668291CBBF06800F9AF86 /* LaunchScreen.storyboard in Resources */,
+				C91668261CBBF06800F9AF86 /* Assets.xcassets in Resources */,
+				C91668211CBBF06800F9AF86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C916682D1CBBF06800F9AF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91668381CBBF06800F9AF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C916680F1CBBF06800F9AF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C916684E1CBBF19E00F9AF86 /* BREventTableViewCell.m in Sources */,
+				C916681E1CBBF06800F9AF86 /* ViewController.m in Sources */,
+				C91668241CBBF06800F9AF86 /* Zeristacon.xcdatamodeld in Sources */,
+				C916685E1CBBFD4200F9AF86 /* Event+CoreDataProperties.m in Sources */,
+				C916685F1CBBFD4200F9AF86 /* Event.m in Sources */,
+				C91668661CBC030300F9AF86 /* BRServiceController.m in Sources */,
+				C916681B1CBBF06800F9AF86 /* AppDelegate.m in Sources */,
+				C91668181CBBF06800F9AF86 /* main.m in Sources */,
+				C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */,
+				C91668621CBBFF2500F9AF86 /* BRCoreDataController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C916682B1CBBF06800F9AF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91668341CBBF06800F9AF86 /* ZeristaconTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91668361CBBF06800F9AF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C916683F1CBBF06800F9AF86 /* ZeristaconUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C91668311CBBF06800F9AF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C91668121CBBF06800F9AF86 /* Zeristacon */;
+			targetProxy = C91668301CBBF06800F9AF86 /* PBXContainerItemProxy */;
+		};
+		C916683C1CBBF06800F9AF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C91668121CBBF06800F9AF86 /* Zeristacon */;
+			targetProxy = C916683B1CBBF06800F9AF86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C916681F1CBBF06800F9AF86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91668201CBBF06800F9AF86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C91668271CBBF06800F9AF86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91668281CBBF06800F9AF86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C91668411CBBF06800F9AF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C91668421CBBF06800F9AF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C91668441CBBF06800F9AF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Zeristacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenRussell.Zeristacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C91668451CBBF06800F9AF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Zeristacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenRussell.Zeristacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C91668471CBBF06800F9AF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZeristaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenRussell.ZeristaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zeristacon.app/Zeristacon";
+			};
+			name = Debug;
+		};
+		C91668481CBBF06800F9AF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZeristaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenRussell.ZeristaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zeristacon.app/Zeristacon";
+			};
+			name = Release;
+		};
+		C916684A1CBBF06800F9AF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZeristaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenRussell.ZeristaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Zeristacon;
+			};
+			name = Debug;
+		};
+		C916684B1CBBF06800F9AF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZeristaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenRussell.ZeristaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Zeristacon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C916680E1CBBF06700F9AF86 /* Build configuration list for PBXProject "Zeristacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91668411CBBF06800F9AF86 /* Debug */,
+				C91668421CBBF06800F9AF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91668431CBBF06800F9AF86 /* Build configuration list for PBXNativeTarget "Zeristacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91668441CBBF06800F9AF86 /* Debug */,
+				C91668451CBBF06800F9AF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91668461CBBF06800F9AF86 /* Build configuration list for PBXNativeTarget "ZeristaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91668471CBBF06800F9AF86 /* Debug */,
+				C91668481CBBF06800F9AF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91668491CBBF06800F9AF86 /* Build configuration list for PBXNativeTarget "ZeristaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C916684A1CBBF06800F9AF86 /* Debug */,
+				C916684B1CBBF06800F9AF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C91668221CBBF06800F9AF86 /* Zeristacon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C91668231CBBF06800F9AF86 /* Zeristacon.xcdatamodel */,
+			);
+			currentVersion = C91668231CBBF06800F9AF86 /* Zeristacon.xcdatamodel */;
+			path = Zeristacon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C916680B1CBBF06700F9AF86 /* Project object */;
+}
