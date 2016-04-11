@@ -20,6 +20,7 @@
 		C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668521CBBF60700F9AF86 /* BRPersistenceController.m */; };
 		C916685E1CBBFD4200F9AF86 /* Event+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */; };
 		C916685F1CBBFD4200F9AF86 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = C916685D1CBBFD4200F9AF86 /* Event.m */; };
+		C91668621CBBFF2500F9AF86 /* BRCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+CoreDataProperties.m"; sourceTree = "<group>"; };
 		C916685C1CBBFD4200F9AF86 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		C916685D1CBBFD4200F9AF86 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		C91668601CBBFF1F00F9AF86 /* BRCoreDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRCoreDataController.h; sourceTree = "<group>"; };
+		C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCoreDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */,
 				C916685C1CBBFD4200F9AF86 /* Event.h */,
 				C916685D1CBBFD4200F9AF86 /* Event.m */,
+				C91668601CBBFF1F00F9AF86 /* BRCoreDataController.h */,
+				C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */,
 			);
 			name = CoreDataSetup;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				C916681B1CBBF06800F9AF86 /* AppDelegate.m in Sources */,
 				C91668181CBBF06800F9AF86 /* main.m in Sources */,
 				C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */,
+				C91668621CBBFF2500F9AF86 /* BRCoreDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
