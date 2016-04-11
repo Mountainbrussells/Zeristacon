@@ -21,6 +21,7 @@
 		C916685E1CBBFD4200F9AF86 /* Event+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C916685B1CBBFD4200F9AF86 /* Event+CoreDataProperties.m */; };
 		C916685F1CBBFD4200F9AF86 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = C916685D1CBBFD4200F9AF86 /* Event.m */; };
 		C91668621CBBFF2500F9AF86 /* BRCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */; };
+		C91668661CBC030300F9AF86 /* BRServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668651CBC030300F9AF86 /* BRServiceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		C916685D1CBBFD4200F9AF86 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		C91668601CBBFF1F00F9AF86 /* BRCoreDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRCoreDataController.h; sourceTree = "<group>"; };
 		C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCoreDataController.m; sourceTree = "<group>"; };
+		C91668641CBC030300F9AF86 /* BRServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRServiceController.h; sourceTree = "<group>"; };
+		C91668651CBC030300F9AF86 /* BRServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRServiceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 		C916680A1CBBF06700F9AF86 = {
 			isa = PBXGroup;
 			children = (
+				C91668631CBC02BB00F9AF86 /* RESTControl */,
 				C91668501CBBF5E600F9AF86 /* CoreDataSetup */,
 				C91668151CBBF06800F9AF86 /* Zeristacon */,
 				C91668321CBBF06800F9AF86 /* ZeristaconTests */,
@@ -174,6 +178,15 @@
 				C91668611CBBFF2500F9AF86 /* BRCoreDataController.m */,
 			);
 			name = CoreDataSetup;
+			sourceTree = "<group>";
+		};
+		C91668631CBC02BB00F9AF86 /* RESTControl */ = {
+			isa = PBXGroup;
+			children = (
+				C91668641CBC030300F9AF86 /* BRServiceController.h */,
+				C91668651CBC030300F9AF86 /* BRServiceController.m */,
+			);
+			name = RESTControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +324,7 @@
 				C91668241CBBF06800F9AF86 /* Zeristacon.xcdatamodeld in Sources */,
 				C916685E1CBBFD4200F9AF86 /* Event+CoreDataProperties.m in Sources */,
 				C916685F1CBBFD4200F9AF86 /* Event.m in Sources */,
+				C91668661CBC030300F9AF86 /* BRServiceController.m in Sources */,
 				C916681B1CBBF06800F9AF86 /* AppDelegate.m in Sources */,
 				C91668181CBBF06800F9AF86 /* main.m in Sources */,
 				C91668531CBBF60700F9AF86 /* BRPersistenceController.m in Sources */,
