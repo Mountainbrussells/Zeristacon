@@ -24,7 +24,6 @@
     self.eventTableView.dataSource = self;
     self.eventTableView.delegate = self;
     self.managedObjectContext = self.perstistenceController.managedObjectContext;
-    [self.serviceController updateEventsWithCompletion:nil];
     NSError *error;
     if (![[self fetchedResultsController] performFetch:&error]) {
         
@@ -43,7 +42,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.serviceController updateEventsWithCompletion:nil];
+    
 }
 
 #pragma mark - NSFetchedResultsController
@@ -59,7 +58,7 @@
     [fetchRequest setEntity:entity];
     
     NSSortDescriptor *sort = [[NSSortDescriptor alloc]
-                              initWithKey:@"startTime" ascending:NO];
+                              initWithKey:@"startTime" ascending:YES];
     [fetchRequest setSortDescriptors:[NSArray arrayWithObject:sort]];
     
     [fetchRequest setFetchBatchSize:20];
@@ -143,14 +142,24 @@
     cell.eventLocationLabel.text = event.location;
     
     NSDateFormatter *dateFormatterStart = [[NSDateFormatter alloc] init];
-    [dateFormatterStart setDateFormat:@"HH:mm"];
+    [dateFormatterStart setDateFormat:@"hh:mm a"];
     NSString *startTime = [dateFormatterStart stringFromDate:event.startTime];
     
     NSDateFormatter *dateFormatterFinish = [[NSDateFormatter alloc] init];
-    [dateFormatterFinish setDateFormat:@"HH:mm"];
+    [dateFormatterFinish setDateFormat:@"hh:mm a"];
     NSString *finishTime = [dateFormatterFinish stringFromDate:event.finishTime];
     
-    NSString *timeLabelString = [NSString stringWithFormat:@"%@ until %@", startTime, finishTime];
+    NSDateFormatter *dateFormatterDay = [[NSDateFormatter alloc] init];
+    NSArray *daysOfWeek = @[@"",@"Sunday",@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday"];
+    [dateFormatterDay setDateFormat:@"e"];
+    NSInteger weekdayNumber = (NSInteger)[[dateFormatterDay stringFromDate:event.startTime] integerValue];
+    NSString *dayOfTheWeek = [NSString stringWithFormat:@"%@", [daysOfWeek objectAtIndex:weekdayNumber]];
+
+   
+    
+    
+    
+    NSString *timeLabelString = [NSString stringWithFormat:@"%@ until %@ on %@", startTime, finishTime, dayOfTheWeek];
     cell.eventTimeLabel.text = timeLabelString;
     
 }

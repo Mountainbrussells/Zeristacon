@@ -26,9 +26,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setPersistenceController:[[BRPersistenceController alloc] initWithCallBack:nil]];
+
     self.coreDataController = [[BRCoreDataController alloc] initWithPersistenceController:self.persistenceController];
-    self.serviceController = [[BRServiceController alloc] initWithPersistenceController:self.persistenceController];
     
+    self.serviceController = [[BRServiceController alloc] initWithPersistenceController:self.persistenceController];
+    self.serviceController.coreDataController = self.coreDataController;
     
     
     UINavigationController *navVC = (UINavigationController *)self.window.rootViewController;
@@ -36,6 +38,7 @@
     viewController.perstistenceController = self.persistenceController;
     viewController.serviceController = self.serviceController;
     
+    [self.serviceController updateEventsWithCompletion:nil];
     
     return YES;
 }
