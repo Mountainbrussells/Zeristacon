@@ -16,6 +16,7 @@
 		C91668291CBBF06800F9AF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91668271CBBF06800F9AF86 /* LaunchScreen.storyboard */; };
 		C91668341CBBF06800F9AF86 /* ZeristaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C91668331CBBF06800F9AF86 /* ZeristaconTests.m */; };
 		C916683F1CBBF06800F9AF86 /* ZeristaconUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C916683E1CBBF06800F9AF86 /* ZeristaconUITests.m */; };
+		C916684E1CBBF19E00F9AF86 /* BREventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C916683A1CBBF06800F9AF86 /* ZeristaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeristaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C916683E1CBBF06800F9AF86 /* ZeristaconUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeristaconUITests.m; sourceTree = "<group>"; };
 		C91668401CBBF06800F9AF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C916684C1CBBF19D00F9AF86 /* BREventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREventTableViewCell.h; sourceTree = "<group>"; };
+		C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREventTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				C916681A1CBBF06800F9AF86 /* AppDelegate.m */,
 				C916681C1CBBF06800F9AF86 /* ViewController.h */,
 				C916681D1CBBF06800F9AF86 /* ViewController.m */,
+				C916684C1CBBF19D00F9AF86 /* BREventTableViewCell.h */,
+				C916684D1CBBF19E00F9AF86 /* BREventTableViewCell.m */,
 				C916681F1CBBF06800F9AF86 /* Main.storyboard */,
 				C91668251CBBF06800F9AF86 /* Assets.xcassets */,
 				C91668271CBBF06800F9AF86 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C916684E1CBBF19E00F9AF86 /* BREventTableViewCell.m in Sources */,
 				C916681E1CBBF06800F9AF86 /* ViewController.m in Sources */,
 				C91668241CBBF06800F9AF86 /* Zeristacon.xcdatamodeld in Sources */,
 				C916681B1CBBF06800F9AF86 /* AppDelegate.m in Sources */,
