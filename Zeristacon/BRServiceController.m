@@ -68,10 +68,10 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         NSString* finishDateString = [event objectForKey:@"finish"];
                         NSDate* finishDate = [dateFormatter dateFromString:finishDateString];
                         existingEvent.finishTime = finishDate;
-                        NSString *locationString = (NSString *)[[event objectForKey:@"location"] objectForKey:@"name"];
-                        if (locationString == NULL) {
+                        if ([event objectForKey:@"location"] == [NSNull null]) {
                             existingEvent.location = @"Location TBD";
                         } else {
+                            NSString *locationString = (NSString *)[[event objectForKey:@"location"] objectForKey:@"name"];
                             existingEvent.location = locationString;
                         }
                         existingEvent.uid = [event objectForKey:@"id"];
