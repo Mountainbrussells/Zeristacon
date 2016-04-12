@@ -68,8 +68,12 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         NSString* finishDateString = [event objectForKey:@"finish"];
                         NSDate* finishDate = [dateFormatter dateFromString:finishDateString];
                         existingEvent.finishTime = finishDate;
-                        NSDictionary *location = [event objectForKey:@"location"];
-  //                      existingEvent.location = location[@"name"];
+                        NSString *locationString = (NSString *)[[event objectForKey:@"location"] objectForKey:@"name"];
+                        if (locationString == NULL) {
+                            existingEvent.location = @"Location TBD";
+                        } else {
+                            existingEvent.location = locationString;
+                        }
                         existingEvent.uid = [event objectForKey:@"id"];
                         
                     
@@ -89,13 +93,14 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         NSString* finishDateString = [event objectForKey:@"finish"];
                         NSDate* finishDate = [dateFormatter dateFromString:finishDateString];
                         mocEvent.finishTime = finishDate;
-                        NSDictionary *location = [event objectForKey:@"location"];
-                        
-                        if (location == NULL) {
+                       
+                        if ([event objectForKey:@"location"] == [NSNull null]) {
                             mocEvent.location = @"Location TBD";
                         } else {
-    //                       mocEvent.location = location[@"name"];
+                            NSString *locationString = (NSString *)[[event objectForKey:@"location"] objectForKey:@"name"];
+                            mocEvent.location = locationString;
                         }
+
                         mocEvent.uid = [event objectForKey:@"id"];
                         
                         NSError *mocError;
