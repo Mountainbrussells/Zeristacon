@@ -71,6 +71,7 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         if ([event objectForKey:@"location"] == [NSNull null]) {
                             existingEvent.location = @"Location TBD";
                         } else {
+                            // This code gave me issues.  For some reason using literal syntax and trying to split it into 2 lines always returned nothing for the location[@"name] as in issue 7 in github
                             NSString *locationString = (NSString *)[[event objectForKey:@"location"] objectForKey:@"name"];
                             existingEvent.location = locationString;
                         }
@@ -97,6 +98,7 @@ static NSString *const kBaseZeristaURL = @"https://zeristacon.zerista.com/event?
                         if ([event objectForKey:@"location"] == [NSNull null]) {
                             mocEvent.location = @"Location TBD";
                         } else {
+                            // This code gave me issues.  For some reason using literal syntax and trying to split it into 2 lines always returned nothing for the location[@"name] as in issue 7 in github
                             NSString *locationString = (NSString *)[[event objectForKey:@"location"] objectForKey:@"name"];
                             mocEvent.location = locationString;
                         }
